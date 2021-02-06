@@ -6,7 +6,8 @@ describe('Orange HRMS',()=>{
         $('#btnLogin').click();
     });
     it('should land on Homepage',()=>{
-        browser.pause(10000)
+        browser.pause(5000);
+        console.log('Home Page title  :  ' + browser.getTitle());
     });
 
 });
