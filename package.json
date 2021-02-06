@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio wdio.conf.js"
+    "test": "npx wdio wdio.conf.js",
+    "allure-report": "allure generate --clean ./reports/allure-results  -o ./reports/allure-report && allure open ./reports/allure-report/"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +19,8 @@
     "chromedriver": "^88.0.0",
     "wdio-chromedriver-service": "^6.0.4",
     "webdriverio": "^6.12.1"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.13.8"
   }
 }
